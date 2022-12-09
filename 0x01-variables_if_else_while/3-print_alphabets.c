@@ -10,7 +10,7 @@ char alp[52] =
 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int i;
 
-for (i = 0;m i < 52; i++)
+for (i = 0; m i < 52; i++)
 {
 
 putchar(alp[i]);
@@ -19,4 +19,4 @@ putchar("\n");
 
 return (0);
 
-}
+i}

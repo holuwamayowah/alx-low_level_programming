@@ -2,22 +2,19 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates memory using malloc
- * @b: the soze of allocated memory
- *
- * Return: pointer to the allocated memory
+ * malloc_checked - allocates a memory to malloc
+ * @b: the int to be used
+ * Return: a pointer to the allocated memory, if fails, terminate with value 98
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *mem;
+	unsigned int *a;
 
-	mem = malloc(b);
-	if (mem == NULL)
-	{
-		free(mem);
+	a = malloc(b);
+
+	if (a == NULL)
 		exit(98);
-	} else
-	{
-		return (mem);
-	}
+
+	return (a);
 }
